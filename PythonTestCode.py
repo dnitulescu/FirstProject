@@ -1,14 +1,13 @@
-class Test():
-    txt1="0"
-    txt2="1"+
+import cv2
 
-    def __init__(self):
-        self.name="fuck"
+img = cv2.imread("galaxy.jpg",0)
+print(type(img))
+print(img)
+print(img.shape)
+print(img.ndim)
 
-
-ne1 = Test()
-ne2 = Test()
-ne1.txt1="ne1"
-print(ne1.txt1)
-print(ne2.txt1)
-
+img_resized = cv2.resize(img,(int(img.shape[1]/2),int(img.shape[0]/2)))
+cv2.imshow("Galaxy",img_resized)
+cv2.imwrite("Galaxy_resized.jpg",img_resized)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
