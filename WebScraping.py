@@ -23,7 +23,7 @@ for page in range(0,int(lastpage)+1,1):
 
     for product in all:
         d={}
-        price =product.find("span",{"class":"money-int"}).text.replace("\n","").replace(" ","")
+        price =product.find("span",{"class":"price-over"}).find("span",{"class":"money-int"}).text.replace("\n","").replace(" ","")
         name = product.find("div",{"class":"middle-container"}).find("h2").text.replace("\n","").replace(" ","")
         d["price"]=price
         d["name"]=name
