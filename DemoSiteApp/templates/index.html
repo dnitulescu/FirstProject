@@ -8,7 +8,7 @@
 <div class="container">
     <h1>Collecting height</h1>
     <h3>Please fill in entries</h3>
-    <form action="success.html" method="post">
+    <form action="{{url_for('success')}}" method="post">
         <input title="Your email will be safe " placeholder="Enter an email adress" type="email" name="email_name"
                required><br>
         <input title="Your height is important" placeholder="Enter height" type="number" max="250" min="30"
