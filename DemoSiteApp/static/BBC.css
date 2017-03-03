@@ -1,0 +1,30 @@
+html,body{
+    height:100%;
+    margin: 0;
+}
+
+.PageHeader{
+    background-color: #ff1a1a;
+    height:5%;
+    position:fixed;
+    width:100%;
+}
+
+.Container{
+    height:200%;
+    padding-top:6%;
+    background-color: #3366ff;
+}
+
+.HeaderElements{
+    padding:1%
+}
+
+#BBCLogo{
+    float:left;
+}
+
+#idcta-link{
+     float:left;
+     font-size:12px;
+}
