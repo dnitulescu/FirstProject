@@ -1,0 +1,21 @@
+html,body{
+    height:100%;
+    margin: 0;
+}
+
+#menu{
+    width: 100%;
+    float : left;
+}
+#codecontainer{
+    width: 100%;
+    float : left;
+    vertical-align: top;
+    background-color: yellow;
+}
+.codeblocks{
+    overflow: auto;
+    height: 100%;
+    border: 3px solid #73AD21;
+    float: left;
+}
