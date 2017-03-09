@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <link href="static/cssfils.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <title>CodeApp</title>
 </head>
 
 <body>
 <div id="menu" class="menu">
-    <p>This is the menu</p>
+    <span id="Title" class="button">This is the menu</span>
+    <button id="HtmlButton" class="button">
+        HTML
+    </button>
+    <button id="HtmlButton" class="button">
+        CSS
+    </button>
 </div>
 <div id="codecontainer" class="codecontainer">
     <div id="htmlcode" class="codeblocks">
@@ -21,9 +28,24 @@
         <p>Code java script</p>
     </div>
     <div id="textcode" class="codeblocks">
-        <p>This is the code</p>
+        <p>This is the codesdfsdfsdfsdfsdf</p>
     </div>
 </div>
+
+<script>
+     var viewportWidth = $("body").innerWidth();
+      $(".codeblocks").css("width",viewportWidth/4-3);
+
+    $(window).resize(function() {
+        var viewportWidth = $("body").innerWidth();
+        $(".codeblocks").css("width",viewportWidth/4-3);
+         });
+
+    $(
+
+
+
+</script>
 
 </body>
 </html>
